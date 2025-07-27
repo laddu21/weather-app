@@ -1,0 +1,134 @@
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80');
+    padding:20px;
+}
+
+.weather-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(10, 10, 10, .5);
+}
+
+.search-engine {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.search-engine input {
+    width: 70%;
+    height: 45px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 2px 15px;
+    font-size: 16px;
+    outline: none;
+    background-color: #ffffff;
+    color: #555555;
+}
+
+.search-engine button {
+    border: none;
+    border-radius: 8px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 13px 15px;
+}
+
+.city-name {
+    margin-bottom: 10px;
+}
+
+.loading {
+    font-size: 60px;
+    font-weight: bolder;
+    color: #000;
+}
+
+.date {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.temp {
+    font-size: 64px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description{
+    color: #000000;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.weather-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.column{
+    display: flex;
+    align-items: center;
+    line-height: 1px;
+}
+
+@media (max-width: 600px) {
+    .weather-container {
+        width: 90%;
+    }
+
+    .search-engine input {
+        width: 60%;
+    }
+
+    .search-engine button {
+        width: 30%;
+    }
+
+    .weather-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        margin-bottom: 10px;
+    }
+}
+
+
+
